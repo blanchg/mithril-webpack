@@ -24,6 +24,7 @@ Usage
 
 1. Clone the repository `git clone https://github.com/blanchg/mithril-webpack`
 2. Install with npm `npm install`
+3. Buid using `webpack`
 3. Ensure nginx is installed and available via the path http://nginx.org
 4. Start using npm `npm start`
 5. When you are finished stop with `npm stop`  
