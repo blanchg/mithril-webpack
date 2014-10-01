@@ -1,8 +1,9 @@
 {
   "name": "loan",
   "version": "0.0.0",
-  "description": "Testing mithril and webpack",
+  "description": "Testing mithril and webpack.  Requires nginx to be on the path to start/stop",
   "main": "",
+  "repository": "https://github.com/blanchg/mithril-webpack.git",
   "dependencies": {
     "mithril": "^0.1.22"
   },
@@ -16,8 +17,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nginx"
+    "start": "nginx",
+    "stop": "nginx -s stop"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
