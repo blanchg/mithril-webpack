@@ -6,9 +6,6 @@ define(["../common"], function(common) {
 		// this.style = require("./page1.useable.css");
 		// this.style.use();
 		this.greeting = "Hello world";
-		this.onunload = function(e) {
-    	    // this.style.unuse();
-	    };
 	}
 	page1.view = function(ctrl) {
 		return [
@@ -16,6 +13,9 @@ define(["../common"], function(common) {
 			common.links()
 		]
 	}
+	page1.onunload = function(e) {
+	    // this.style.unuse();
+    };
 
 	return page1
 });
