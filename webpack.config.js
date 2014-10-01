@@ -1,4 +1,5 @@
-var webpack = require("webpack");
+var webpack = require("webpack"),
+	htmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	context: __dirname + "/src",
@@ -26,6 +27,11 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js"),
-		new webpack.optimize.UglifyJsPlugin()
+		new webpack.optimize.UglifyJsPlugin(),
+		new webpack.optimize.DedupePlugin(),
+		new htmlWebpackPlugin({
+			title: 'Loan Manager',
+			template: 'src/index.html'
+		})
 	]
 }
