@@ -1,0 +1,24 @@
+{
+  "name": "loan",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "^3.2.0",
+    "http-rewrite-middleware": "^0.1.6",
+    "mithril": "^0.1.22",
+    "serve-static": "^1.6.3"
+  },
+  "devDependencies": {
+    "bundle-loader": "^0.5.0",
+    "css-loader": "^0.9.0",
+    "style-loader": "^0.8.0",
+    "webpack": "^1.4.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
