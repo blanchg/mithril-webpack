@@ -26,6 +26,7 @@ module.exports = {
 		extensions: ['', '.js', '.json'] 
 	},
 	plugins: [
+		new webpack.ProvidePlugin({ m: "mithril" }),
 		new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js"),
 		new webpack.optimize.UglifyJsPlugin(),
 		new webpack.optimize.DedupePlugin(),
